@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B708D0AF29A7932F00516AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708D0AE29A7932F00516AC6 /* AppDelegate.swift */; };
-		B708D0B329A7932F00516AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708D0B229A7932F00516AC6 /* ViewController.swift */; };
 		B708D0B829A7933000516AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B708D0B729A7933000516AC6 /* Assets.xcassets */; };
 		B708D0C629A7933000516AC6 /* YHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708D0C529A7933000516AC6 /* YHomeTests.swift */; };
 		B708D0D029A7933000516AC6 /* YHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708D0CF29A7933000516AC6 /* YHomeUITests.swift */; };
@@ -24,6 +23,12 @@
 		B730A7D729A7A03E008A187B /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D629A7A03E008A187B /* Banner.swift */; };
 		B730A7D929A7A50D008A187B /* DataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D829A7A50D008A187B /* DataResult.swift */; };
 		B730A7DB29A7A550008A187B /* ResultServerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DA29A7A550008A187B /* ResultServerCode.swift */; };
+		B730A7DD29A7AEBA008A187B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DC29A7AEBA008A187B /* HomeViewController.swift */; };
+		B730A7DF29A7AEFB008A187B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DE29A7AEFB008A187B /* HomeView.swift */; };
+		B730A7E229A7AF26008A187B /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B730A7E129A7AF26008A187B /* FlexLayout */; };
+		B730A7E529A7AF6F008A187B /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B730A7E429A7AF6F008A187B /* PinLayout */; };
+		B730A7E929A7BC65008A187B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7E829A7BC65008A187B /* BaseView.swift */; };
+		B730A7EC29A7C2B9008A187B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7EB29A7C2B9008A187B /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +51,6 @@
 /* Begin PBXFileReference section */
 		B708D0AB29A7932F00516AC6 /* YHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B708D0AE29A7932F00516AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B708D0B229A7932F00516AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B708D0B729A7933000516AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B708D0BC29A7933000516AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B708D0C129A7933000516AC6 /* YHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +65,10 @@
 		B730A7D629A7A03E008A187B /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		B730A7D829A7A50D008A187B /* DataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResult.swift; sourceTree = "<group>"; };
 		B730A7DA29A7A550008A187B /* ResultServerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultServerCode.swift; sourceTree = "<group>"; };
+		B730A7DC29A7AEBA008A187B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B730A7DE29A7AEFB008A187B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B730A7E829A7BC65008A187B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		B730A7EB29A7C2B9008A187B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B730A7E529A7AF6F008A187B /* PinLayout in Frameworks */,
 				B708D0EB29A7984500516AC6 /* Kingfisher in Frameworks */,
 				B708D0E129A794CE00516AC6 /* Alamofire in Frameworks */,
+				B730A7E229A7AF26008A187B /* FlexLayout in Frameworks */,
 				B708D0E829A7954B00516AC6 /* ReactorKit in Frameworks */,
 				B708D0E529A794F400516AC6 /* Then in Frameworks */,
 			);
@@ -99,6 +109,7 @@
 				B708D0C429A7933000516AC6 /* YHomeTests */,
 				B708D0CE29A7933000516AC6 /* YHomeUITests */,
 				B708D0AC29A7932F00516AC6 /* Products */,
+				B730A7E029A7AF26008A187B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +217,7 @@
 		B730A7C729A79A72008A187B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B730A7E629A7BC3E008A187B /* Utils */,
 				B730A7C929A79AA8008A187B /* View */,
 			);
 			path = Presentation;
@@ -222,9 +234,42 @@
 		B730A7C929A79AA8008A187B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B708D0B229A7932F00516AC6 /* ViewController.swift */,
+				B730A7DC29A7AEBA008A187B /* HomeViewController.swift */,
+				B730A7DE29A7AEFB008A187B /* HomeView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		B730A7E029A7AF26008A187B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B730A7E629A7BC3E008A187B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7E729A7BC45008A187B /* Base */,
+				B730A7EA29A7C2A7008A187B /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B730A7E729A7BC45008A187B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7E829A7BC65008A187B /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B730A7EA29A7C2A7008A187B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7EB29A7C2B9008A187B /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +293,8 @@
 				B708D0E429A794F400516AC6 /* Then */,
 				B708D0E729A7954B00516AC6 /* ReactorKit */,
 				B708D0EA29A7984500516AC6 /* Kingfisher */,
+				B730A7E129A7AF26008A187B /* FlexLayout */,
+				B730A7E429A7AF6F008A187B /* PinLayout */,
 			);
 			productName = YHome;
 			productReference = B708D0AB29A7932F00516AC6 /* YHome.app */;
@@ -327,6 +374,7 @@
 				B708D0E329A794F400516AC6 /* XCRemoteSwiftPackageReference "Then" */,
 				B708D0E629A7954B00516AC6 /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				B708D0E929A7984500516AC6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B730A7E329A7AF6F008A187B /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = B708D0AC29A7932F00516AC6 /* Products */;
 			projectDirPath = "";
@@ -369,15 +417,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B708D0B329A7932F00516AC6 /* ViewController.swift in Sources */,
 				B730A7CF29A79D2B008A187B /* RecommendEvent.swift in Sources */,
 				B708D0AF29A7932F00516AC6 /* AppDelegate.swift in Sources */,
 				B730A7D529A79F6E008A187B /* HomeDataResult.swift in Sources */,
+				B730A7DF29A7AEFB008A187B /* HomeView.swift in Sources */,
 				B730A7DB29A7A550008A187B /* ResultServerCode.swift in Sources */,
 				B730A7D929A7A50D008A187B /* DataResult.swift in Sources */,
+				B730A7EC29A7C2B9008A187B /* UIView+Extension.swift in Sources */,
 				B730A7D729A7A03E008A187B /* Banner.swift in Sources */,
 				B730A7D329A79ED5008A187B /* YsTv.swift in Sources */,
 				B730A7CB29A79C1A008A187B /* DisplayTag.swift in Sources */,
+				B730A7E929A7BC65008A187B /* BaseView.swift in Sources */,
+				B730A7DD29A7AEBA008A187B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +791,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		B730A7E329A7AF6F008A187B /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -762,6 +821,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B708D0E929A7984500516AC6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		B730A7E129A7AF26008A187B /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B708D0E229A794E800516AC6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		B730A7E429A7AF6F008A187B /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B730A7E329A7AF6F008A187B /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -12,7 +12,7 @@ enum ResultServerCode: String, Decodable {
     case fail
     
     init(from decoder: Decoder) throws {
-        var container = try decoder.container(keyedBy: ResultCodingKey.self)
+        let container = try decoder.container(keyedBy: ResultCodingKey.self)
         
         self = ResultServerCode(rawValue: try container.decodeIfPresent(String.self,
                                                                         forKey: .serverCode) ?? "") ?? ResultServerCode.fail
