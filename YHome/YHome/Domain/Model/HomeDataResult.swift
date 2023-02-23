@@ -8,6 +8,6 @@
 import Foundation
 
 struct HomeDataResult: Decodable {
-    let serverCode: ResultServerCode
-    let result: DataResult
+    let serverCode: String
+    let results: DataResult
 }

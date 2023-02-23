@@ -9,6 +9,8 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     
+    var homeRepository = HomeRepository()
+    
     private var mainView : HomeView {
         return view as! HomeView
     }
