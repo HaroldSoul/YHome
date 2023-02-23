@@ -16,7 +16,7 @@ struct RecommendEventList: Codable {
     let currencyName: String
     let customerCode: String
     let score: Int
-    let cpmBudgetScore: String
+    let cpmBudgetScore: Double
     let locationName: String
     let productCode: String
     let wishCount: Int

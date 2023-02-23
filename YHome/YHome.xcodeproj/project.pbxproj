@@ -22,13 +22,15 @@
 		B730A7D529A79F6E008A187B /* HomeDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D429A79F6E008A187B /* HomeDataResult.swift */; };
 		B730A7D729A7A03E008A187B /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D629A7A03E008A187B /* Banner.swift */; };
 		B730A7D929A7A50D008A187B /* DataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D829A7A50D008A187B /* DataResult.swift */; };
-		B730A7DB29A7A550008A187B /* ResultServerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DA29A7A550008A187B /* ResultServerCode.swift */; };
 		B730A7DD29A7AEBA008A187B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DC29A7AEBA008A187B /* HomeViewController.swift */; };
 		B730A7DF29A7AEFB008A187B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DE29A7AEFB008A187B /* HomeView.swift */; };
 		B730A7E229A7AF26008A187B /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B730A7E129A7AF26008A187B /* FlexLayout */; };
 		B730A7E529A7AF6F008A187B /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B730A7E429A7AF6F008A187B /* PinLayout */; };
 		B730A7E929A7BC65008A187B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7E829A7BC65008A187B /* BaseView.swift */; };
 		B730A7EC29A7C2B9008A187B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7EB29A7C2B9008A187B /* UIView+Extension.swift */; };
+		B730A7EE29A7C4B0008A187B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7ED29A7C4B0008A187B /* NetworkService.swift */; };
+		B76AC52D29A7CBE800ED5BFC /* HomeRepositoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AC52C29A7CBE800ED5BFC /* HomeRepositoryUseCase.swift */; };
+		B76AC53029A7CC9300ED5BFC /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AC52F29A7CC9300ED5BFC /* HomeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +66,13 @@
 		B730A7D429A79F6E008A187B /* HomeDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataResult.swift; sourceTree = "<group>"; };
 		B730A7D629A7A03E008A187B /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		B730A7D829A7A50D008A187B /* DataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResult.swift; sourceTree = "<group>"; };
-		B730A7DA29A7A550008A187B /* ResultServerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultServerCode.swift; sourceTree = "<group>"; };
 		B730A7DC29A7AEBA008A187B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B730A7DE29A7AEFB008A187B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B730A7E829A7BC65008A187B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B730A7EB29A7C2B9008A187B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B730A7ED29A7C4B0008A187B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B76AC52C29A7CBE800ED5BFC /* HomeRepositoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryUseCase.swift; sourceTree = "<group>"; };
+		B76AC52F29A7CC9300ED5BFC /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		B730A7C129A79A32008A187B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B76AC52E29A7CC8500ED5BFC /* HomeRepository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -187,7 +192,6 @@
 				B730A7D429A79F6E008A187B /* HomeDataResult.swift */,
 				B730A7CE29A79D2B008A187B /* RecommendEvent.swift */,
 				B730A7D229A79ED5008A187B /* YsTv.swift */,
-				B730A7DA29A7A550008A187B /* ResultServerCode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +199,7 @@
 		B730A7C429A79A4F008A187B /* UsesCase */ = {
 			isa = PBXGroup;
 			children = (
+				B76AC52C29A7CBE800ED5BFC /* HomeRepositoryUseCase.swift */,
 			);
 			path = UsesCase;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 		B730A7C629A79A65008A187B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				B730A7ED29A7C4B0008A187B /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -270,6 +276,14 @@
 				B730A7EB29A7C2B9008A187B /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B76AC52E29A7CC8500ED5BFC /* HomeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				B76AC52F29A7CC9300ED5BFC /* HomeRepository.swift */,
+			);
+			path = HomeRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,13 +435,15 @@
 				B708D0AF29A7932F00516AC6 /* AppDelegate.swift in Sources */,
 				B730A7D529A79F6E008A187B /* HomeDataResult.swift in Sources */,
 				B730A7DF29A7AEFB008A187B /* HomeView.swift in Sources */,
-				B730A7DB29A7A550008A187B /* ResultServerCode.swift in Sources */,
 				B730A7D929A7A50D008A187B /* DataResult.swift in Sources */,
 				B730A7EC29A7C2B9008A187B /* UIView+Extension.swift in Sources */,
 				B730A7D729A7A03E008A187B /* Banner.swift in Sources */,
 				B730A7D329A79ED5008A187B /* YsTv.swift in Sources */,
 				B730A7CB29A79C1A008A187B /* DisplayTag.swift in Sources */,
+				B76AC53029A7CC9300ED5BFC /* HomeRepository.swift in Sources */,
+				B76AC52D29A7CBE800ED5BFC /* HomeRepositoryUseCase.swift in Sources */,
 				B730A7E929A7BC65008A187B /* BaseView.swift in Sources */,
+				B730A7EE29A7C4B0008A187B /* NetworkService.swift in Sources */,
 				B730A7DD29A7AEBA008A187B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
