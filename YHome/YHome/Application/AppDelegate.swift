@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let naviVC = UINavigationController(rootViewController: ViewController())
+        let naviVC = UINavigationController(rootViewController: HomeViewController())
         window.rootViewController = naviVC
         window.makeKeyAndVisible()
         self.window = window
