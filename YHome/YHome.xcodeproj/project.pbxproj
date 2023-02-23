@@ -17,6 +17,13 @@
 		B708D0E529A794F400516AC6 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = B708D0E429A794F400516AC6 /* Then */; };
 		B708D0E829A7954B00516AC6 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = B708D0E729A7954B00516AC6 /* ReactorKit */; };
 		B708D0EB29A7984500516AC6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B708D0EA29A7984500516AC6 /* Kingfisher */; };
+		B730A7CB29A79C1A008A187B /* DisplayTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7CA29A79C1A008A187B /* DisplayTag.swift */; };
+		B730A7CF29A79D2B008A187B /* RecommendEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7CE29A79D2B008A187B /* RecommendEvent.swift */; };
+		B730A7D329A79ED5008A187B /* YsTv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D229A79ED5008A187B /* YsTv.swift */; };
+		B730A7D529A79F6E008A187B /* HomeDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D429A79F6E008A187B /* HomeDataResult.swift */; };
+		B730A7D729A7A03E008A187B /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D629A7A03E008A187B /* Banner.swift */; };
+		B730A7D929A7A50D008A187B /* DataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7D829A7A50D008A187B /* DataResult.swift */; };
+		B730A7DB29A7A550008A187B /* ResultServerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730A7DA29A7A550008A187B /* ResultServerCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		B708D0CB29A7933000516AC6 /* YHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B708D0CF29A7933000516AC6 /* YHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHomeUITests.swift; sourceTree = "<group>"; };
 		B708D0D129A7933000516AC6 /* YHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B730A7CA29A79C1A008A187B /* DisplayTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTag.swift; sourceTree = "<group>"; };
+		B730A7CE29A79D2B008A187B /* RecommendEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendEvent.swift; sourceTree = "<group>"; };
+		B730A7D229A79ED5008A187B /* YsTv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YsTv.swift; sourceTree = "<group>"; };
+		B730A7D429A79F6E008A187B /* HomeDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataResult.swift; sourceTree = "<group>"; };
+		B730A7D629A7A03E008A187B /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		B730A7D829A7A50D008A187B /* DataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResult.swift; sourceTree = "<group>"; };
+		B730A7DA29A7A550008A187B /* ResultServerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultServerCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +115,12 @@
 		B708D0AD29A7932F00516AC6 /* YHome */ = {
 			isa = PBXGroup;
 			children = (
-				B708D0AE29A7932F00516AC6 /* AppDelegate.swift */,
-				B708D0B229A7932F00516AC6 /* ViewController.swift */,
-				B708D0B729A7933000516AC6 /* Assets.xcassets */,
+				B730A7C029A79A26008A187B /* Application */,
+				B730A7C129A79A32008A187B /* Data */,
+				B730A7C229A79A3A008A187B /* Domain */,
+				B730A7C529A79A5B008A187B /* Network */,
+				B730A7C729A79A72008A187B /* Presentation */,
+				B730A7C829A79A87008A187B /* Resource */,
 				B708D0BC29A7933000516AC6 /* Info.plist */,
 			);
 			path = YHome;
@@ -124,6 +141,90 @@
 				B708D0D129A7933000516AC6 /* YHomeUITestsLaunchTests.swift */,
 			);
 			path = YHomeUITests;
+			sourceTree = "<group>";
+		};
+		B730A7C029A79A26008A187B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B708D0AE29A7932F00516AC6 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B730A7C129A79A32008A187B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B730A7C229A79A3A008A187B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7C329A79A45008A187B /* Model */,
+				B730A7C429A79A4F008A187B /* UsesCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B730A7C329A79A45008A187B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7D629A7A03E008A187B /* Banner.swift */,
+				B730A7D829A7A50D008A187B /* DataResult.swift */,
+				B730A7CA29A79C1A008A187B /* DisplayTag.swift */,
+				B730A7D429A79F6E008A187B /* HomeDataResult.swift */,
+				B730A7CE29A79D2B008A187B /* RecommendEvent.swift */,
+				B730A7D229A79ED5008A187B /* YsTv.swift */,
+				B730A7DA29A7A550008A187B /* ResultServerCode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B730A7C429A79A4F008A187B /* UsesCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UsesCase;
+			sourceTree = "<group>";
+		};
+		B730A7C529A79A5B008A187B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7C629A79A65008A187B /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B730A7C629A79A65008A187B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B730A7C729A79A72008A187B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B730A7C929A79AA8008A187B /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B730A7C829A79A87008A187B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B708D0B729A7933000516AC6 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B730A7C929A79AA8008A187B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B708D0B229A7932F00516AC6 /* ViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +370,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B708D0B329A7932F00516AC6 /* ViewController.swift in Sources */,
+				B730A7CF29A79D2B008A187B /* RecommendEvent.swift in Sources */,
 				B708D0AF29A7932F00516AC6 /* AppDelegate.swift in Sources */,
+				B730A7D529A79F6E008A187B /* HomeDataResult.swift in Sources */,
+				B730A7DB29A7A550008A187B /* ResultServerCode.swift in Sources */,
+				B730A7D929A7A50D008A187B /* DataResult.swift in Sources */,
+				B730A7D729A7A03E008A187B /* Banner.swift in Sources */,
+				B730A7D329A79ED5008A187B /* YsTv.swift in Sources */,
+				B730A7CB29A79C1A008A187B /* DisplayTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
