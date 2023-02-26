@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RecommendEventList: Codable {
+struct RecommendEvent: Codable {
     let name: String
     let comment: String
     let customerName: String

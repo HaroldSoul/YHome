@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func round() {
-        layer.cornerRadius = ((bounds.width < bounds.height) ? bounds.width: bounds.height) / 2
+    func round(_ rad: CGFloat = 0) {
+        layer.cornerRadius = rad == 0 ? ((bounds.width < bounds.height) ? bounds.width: bounds.height) / 2 : rad
+        layer.masksToBounds = true
     }
 }
 

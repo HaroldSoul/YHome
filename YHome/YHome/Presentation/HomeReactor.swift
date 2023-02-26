@@ -8,6 +8,7 @@
 import Foundation
 
 import ReactorKit
+import RxDataSources
 
 final class HomeReactor: Reactor {
     enum Action {
@@ -15,12 +16,12 @@ final class HomeReactor: Reactor {
     }
     
     enum Mutation {
-        case resultData(data: DataResult?)
+        case resultData(data: [HomeSection])
         case alertErrorMessage(message: String)
     }
     
     struct State {
-        var result: DataResult?
+        var result: [HomeSection] = []
         var alertMessage: String = ""
     }
     
@@ -61,7 +62,26 @@ extension HomeReactor {
                     return
                 }
                 
-                observer.onNext(.resultData(data: dataResult))
+                let sectionData = dataResult.map {
+                    switch $0 {
+                    case .newEvent(let items):
+                        return HomeSection(title: $0.title,
+                                           keyword: $0.keyword,
+                                           isMore: $0.isMore,
+                                           items: items.map{ ItemReactor.recommand(ReCommandReactor($0)) })
+                    case .recommand(let items):
+                        return HomeSection(title: $0.title,
+                                           keyword: $0.keyword,
+                                           isMore: $0.isMore,
+                                           items: items.map{ ItemReactor.recommand(ReCommandReactor($0)) })
+                    case .ysTv(let items):
+                        return HomeSection(title: $0.title,
+                                           keyword: $0.keyword,
+                                           isMore: $0.isMore,
+                                           items: [ItemReactor.tv(TvReactor(items))])
+                    }
+                }
+                observer.onNext(.resultData(data: sectionData))
                 observer.onCompleted()
             }
             return Disposables.create()

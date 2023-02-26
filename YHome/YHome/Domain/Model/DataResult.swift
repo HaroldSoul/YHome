@@ -10,7 +10,7 @@ import Foundation
 struct DataResult: Codable {
     let bannerList: [Banner]
     let displayTagList: [DisplayTag]
-    let recommendEventList: [RecommendEventList]
-    let newEventList: [RecommendEventList]
+    let recommendEventList: [RecommendEvent]
+    let newEventList: [RecommendEvent]
     let ysTvList: [YsTv]
 }
