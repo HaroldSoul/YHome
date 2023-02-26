@@ -8,6 +8,6 @@
 import Foundation
 
 protocol HomeRepositoryUseCase: AnyObject {
-    func fetchHomeData(complete: @escaping ((DataResult?) -> Void))
+    func fetchHomeData(complete: @escaping (([Result]?) -> Void))
     func cancel()
 }
