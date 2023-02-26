@@ -63,6 +63,9 @@ final class HomeViewController: UIViewController, View {
                                                                for: indexPath) as? TvCell else {
                     return UITableViewCell()
                 }
+                guard cell.reactor == nil else {
+                    return cell
+                }
                 cell.reactor = tv
                 return cell
             case .newEvent(let recommand), .recommand(let recommand):

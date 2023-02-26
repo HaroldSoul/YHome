@@ -3,7 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ResultServerCode.init(from:):ResultServerCode.swift">
+         contextName = "closure #1 in HomeViewController.dataSource.getter:HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.reactor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomeRepository.fetchHomeData(complete:):HomeRepository.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "result.results">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "TvCell.sizeThatFits(_:):TvCell.swift">
@@ -14,10 +27,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in HomeRepository.fetchHomeData(complete:):HomeRepository.swift">
+         contextName = "ResultServerCode.init(from:):ResultServerCode.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Utils.currencyText(_:):Uitls.swift">
          <PersistentStrings>
             <PersistentString
-               value = "result.results">
+               value = "price/10000">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
