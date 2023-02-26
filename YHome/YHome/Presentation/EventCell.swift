@@ -91,7 +91,6 @@ final class EventCell: BaseTableViewCell, View {
     private let lbName: UILabel = UILabel().then {
         $0.font = Constants.Font.nameFont
         $0.textColor = Constants.Color.nameColor
-        $0.numberOfLines = 2
     }
     
     private let lbComment: UILabel = UILabel().then {
@@ -253,7 +252,7 @@ final class EventCell: BaseTableViewCell, View {
         lbComment.flex.markDirty()
         bodyView.flex.markDirty()
         
-        lbPrice.text = String(format: "%d%@", model.price, model.currencyName)
+        lbPrice.text = String(format: "%@%@", Utils.shared.currencyText(model.price), model.currencyName)
         lbReviewCount.text = String(model.reviewCount)
         lbWishCount.text = String(model.wishCount)
         lbScore.text = String(model.score)

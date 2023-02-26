@@ -107,7 +107,8 @@ final class DetailView: BaseView {
         lbHospitalName.text = String(format: "🏥 %@", recommand.displayName)
         lbTitle.text = recommand.name
         lbDescription.text = recommand.comment
-        lbPrice.text = String(format: "%d %@", recommand.price, recommand.currencyName)
+        lbPrice.text = String(format: "%@%@", Utils.shared.currencyText(recommand.price),
+                              recommand.currencyName)
         
     }
     
